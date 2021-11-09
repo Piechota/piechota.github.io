@@ -18,3 +18,7 @@ div.resume_section h3 {
 div.resume_section_content {
     margin-left: 50px;
 }
+
+a:link {
+    color: #2e55b6;
+  }
