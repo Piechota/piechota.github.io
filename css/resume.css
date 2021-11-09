@@ -1,0 +1,19 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+div.resume_section {
+    border-top-style: solid;
+    border-width: 5px;
+    border-color: rgb(155, 155, 155);
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+div.resume_section h3 {
+    margin-bottom: 10px;
+}
+
+div.resume_section_content {
+    margin-left: 50px;
+}
