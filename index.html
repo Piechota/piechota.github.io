@@ -10,7 +10,8 @@
         <div>
         Hello, my name is Konrad. 
         <br>
-        Contact: <a href = "mailto: konrad.piechota@outlook.com">konrad.piechota@outlook.com</a> / <a href="https://twitter.com/piechota_konrad">twitter</a>
+        Contact: 
+        <a href = "mailto: konrad.piechota@outlook.com">konrad.piechota@outlook.com</a> / <a href="https://twitter.com/piechota_konrad">twitter</a>
         </div>
 
         <div class="resume_section">
@@ -32,28 +33,80 @@
                     <li>
                         Call of Duty: Vanguard
                         <br>
-                        Mostly responsible for clouds raymarching.
-                        <br>
-                        Additionally I have worked on SSSSS improvements.
+                        <div class="description">
+                            Mostly responsible for clouds raymarching.
+                            <br>
+                            Additionally I have worked on SSSSS improvements.
+                        </div>
+                        <div class="media">
+                            <div class="mySlides">
+                                <img src="media/call_of_duty_vanguard.jpg" height="500">
+                            </div>
+                            <div class="mySlides">
+                                <img src="media/COD_Vanguard_-_Midway_7.png" height="500">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(0, this.parentNode, -1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(0, this.parentNode, 1)">&#10095;</a>
+                        </div>
                     </li>
                     <li>
                         Call of Duty: Modern Warfare/Warzone
                         <br>
-                        I have worked on optimizing and improving volumetrics, Warzone circle fog, SDF texture compression, work on night vision, and other small stuff.
+                        <div class="description">
+                            I have worked on optimizing and improving volumetrics, Warzone circle fog, SDF texture compression, work on night vision, and other small stuff.
+                        </div>
+                        <div class="media">
+                            <div class="mySlides">
+                                <img src="media/COD-MW-LOGO-PLAIN.png" height="500">
+                            </div>
+                            <div class="mySlides">
+                                <img src="media/mw_volumetric.jpg" height="500">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(1, this.parentNode, -1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, this.parentNode, 1)">&#10095;</a>
+                        </div>
                     </li>
                     <li>
                         Shadow Warrior 2
-                        <br>        
-                        Tools: curve editor, profiling tool, in game objects animation tool.
                         <br>
-                        Rendering work: hologram damage effect, particle improvements.
-                        <br>
-                        Others: Photo Mode.                
+                        <div class="description">      
+                            Tools: curve editor, profiling tool, in game objects animation tool.
+                            <br>
+                            Rendering work: hologram damage effect, particle improvements.
+                            <br>
+                            Others: Photo Mode.     
+                        </div>
+                        <div class="media">
+                            <div class="mySlides">
+                                <img src="media/sw2_logo.png" height="500">
+                            </div>
+                            <div class="mySlides">
+                                <img src="media/sw2_hologram.jpg" height="500">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(2, this.parentNode, -1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(2, this.parentNode, 1)">&#10095;</a>
+                        </div>           
                     </li>
                     <li>
                         Hard Reset: Redux
                         <br>
-                        Helped with porting.
+                        <div class="description">    
+                            Helped with porting. 
+                        </div>
+                        <div class="media">
+                            <div class="mySlides">
+                                <img src="media/hrr_logo.jpg" height="500">
+                            </div>
+                            <div class="mySlides">
+                                <img src="media/hrr_screen.jpg" height="500">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(3, this.parentNode, -1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(3, this.parentNode, 1)">&#10095;</a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -62,21 +115,292 @@
             <h1>Other Projects:</h1>
             <div class="resume_section_content">
                 <ul>
-                    <li>RayTracing</li>
-                    <li>SandBox engine</li>
-                    <li>Software rasterizer</li>
-                    <li>Ludum Dare 40</li>
-                    <li>Ludum Dare 38</li>
-                    <li>Slavic Game Jam 2016</li>
-                    <li>Komiks Game Jam 2015</li>
-                    <li>Slavic Game Jam 2015</li>
-                    <li>TheHunt</li>
-                    <li>Ludum Dare 32</li>
-                    <li>Global Game Jam 2015</li>
-                    <li>ShipIn5</li>
-                    <li>Ludum Dare 30</li>
-                    <li>Techland Game Jam 2014</li>
-                    <li>Rocket Thruster </li>
+                    <li>
+                        RayTracing
+                        <br>
+                        <div class="description">    
+                            Small raytracing in C++.
+                            <br>
+                            Supports: volumetrc, BVH, multithreading.
+                            <br>
+                            <a href="https://github.com/Piechota/rayTracing">Repo</a>
+                        </div>
+                        <div class="media">
+                            <div class="mySlides">
+                                <img src="https://raw.githubusercontent.com/Piechota/rayTracing/master/images/cornell_box_smoke.png" height="500">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(4, this.parentNode, -1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(4, this.parentNode, 1)">&#10095;</a>
+                        </div>
+                    </li>
+                    <li>
+                        SandBox engine
+                        <br>
+                        <div class="description">    
+                            Game Engine made in C++/DX12.
+                            <br>
+                            Features: 
+                            <ul>
+                                <li>PBR</li>
+                                <li>Area lights with Linearly Transformed Cosines</li>
+                                <li>Tiled particle system</li>
+                                <li>ECS</li>
+                                <li>Sound system</li>
+                            </ul>
+                            <a href="https://github.com/Piechota/engine/tree/master">Repo</a>
+                        </div>
+                        <div class="media">
+                            <div class="mySlides">
+                                <img src="https://raw.githubusercontent.com/Piechota/engine/master/images/ltc.png" height="500">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(5, this.parentNode, -1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(5, this.parentNode, 1)">&#10095;</a>
+                        </div>
+                    </li>
+                    <li>
+                        Software rasterizer
+                        <br>
+                        <div class="description">   
+                        C++ software rasterization.
+                        <br>
+                        Features: 
+                        <ul>
+                            <li>Mipmaps</li>
+                            <li>Trilinear interpolation</li>
+                        </ul>
+                        <a href="https://bitbucket.org/piechota/rasterization/src/abab88ff0f3f26762e852458ce56ceea054f362e/rasterization/rasterization/rasterization/?at=master">Repo</a>
+                    </div>
+                    <div class="media">
+                        <div class="mySlides">
+                            <video width="320" height="240" autoplay muted loop>
+                                <source src="media/rasterizer.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                          </video>
+                        </div>
+                        <div class="mySlides">
+                            <img src="media/rasterizer_screen1.png" height="500">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(6, this.parentNode, -1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(6, this.parentNode, 1)">&#10095;</a>
+                    </div>
+                    </li>
+                    <li>
+                        Ludum Dare 40
+                        <br>
+                        <div class="description">   
+                            72h GameJam. Players escape fans to get to the next concert. Made with Unity3D.
+                            <br>
+                            My responsibilities:
+                            <ul>
+                                <li>Crowd behavior.</li>
+                                <li>Crowd randomization.</li>
+                                <li>Fans behavior.</li>
+                                <li>Sound system.</li>
+                            </ul>
+                            <a href="https://ldjam.com/events/ludum-dare/40/lil-justins-fame-escape">Project site</a>
+                        </div>
+                        <div class="media">
+                            <div class="mySlides">
+                                <img src="media/LD40_1.png" height="500">
+                            </div>
+                            <div class="mySlides">
+                                <img src="media/LD40_0.gif" height="500">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(7, this.parentNode, -1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(7, this.parentNode, 1)">&#10095;</a>
+                        </div>
+                    </li>
+                    <li>
+                        Ludum Dare 38
+                        <br>
+                        <div class="description">   
+                            Game, 2D engine and all assets made in 2 days for LD38. Using C++ and DX12.
+                            <br>
+                            <a href="https://ldjam.com/events/ludum-dare/38/your-small-world">Project site</a>
+                            <br>
+                            <a href="https://github.com/Piechota/ludumdare38">Repo</a>                            
+                        </div>
+                        <div class="media">
+                            <div class="mySlides">
+                                <img src="media/SW_0.png" height="500">
+                            </div>
+                            <div class="mySlides">
+                                <img src="media/SW_1.png" height="500">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(8, this.parentNode, -1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(8, this.parentNode, 1)">&#10095;</a>
+                        </div>
+                    </li>
+                    <li>
+                        TheHunt
+                        <br>
+                        <div class="description">   
+                            Student project showcase, grand prix in technology. FPS game. Made with XNA.
+                            <br>
+                            My responsibilities:
+                            <ul>
+                                <li>Implementation of  Physically Based Rendering.</li>
+                                <li>Image Based Lighting with parallax corrected cubemap.</li>
+                                <li>Post processes:
+                                    <ul>
+                                        <li>Fog.</li>
+                                        <li>Rain.</li>
+                                        <li>Outline.</li>
+                                    </ul>   
+                                </li>
+                                <li>Optimization of shaders.</li>
+                                <li>Animation system.</li>
+                                <li>Drones behavior.</li>
+                            </ul>
+                        </div>
+                        <div class="media">
+                            <div class="mySlides">
+                                <img src="media/TheHunt4.png" height="500">
+                            </div>
+                            <div class="mySlides">
+                                <iframe width="889" height="500" src="https://www.youtube.com/embed/bwt9gEEwl90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="mySlides">
+                                <img src="media/TheHunt0.png" height="500">
+                            </div>
+                            <div class="mySlides">
+                                <img src="media/TheHunt1.png" height="500">
+                            </div>
+                            <div class="mySlides">
+                                <img src="media/TheHunt2.png" height="500">
+                            </div>
+                            <div class="mySlides">
+                                <img src="media/TheHunt3.png" height="500">
+                            </div>
+                            <div class="mySlides">
+                                <iframe width="889" height="500" src="https://www.youtube.com/embed/AojEeD6x8M8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(9, this.parentNode, -1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(9, this.parentNode, 1)">&#10095;</a>
+                        </div>
+                    </li>
+                    <li>
+                        Ludum Dare 32
+                        <br>
+                        <div class="description">   
+                            72h GameJam. Players have to destroy data blocks with drone. Support Kinect v2. Made with Unity3D.
+                            <br>
+                            I was responsible for Kinect integration.
+                        </div>
+                        <div class="media">
+                            <div class="mySlides">
+                                <img src="media/CR_0.jpg" height="500">
+                            </div>
+                            <div class="mySlides">
+                                <iframe width="889" height="500" src="https://www.youtube.com/embed/JSC2zFcJOB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="mySlides">
+                                <img src="media/CR_1.jpg" height="500">
+                            </div>
+                            <div class="mySlides">
+                                <img src="media/CR_2.jpg" height="500">
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(10, this.parentNode, -1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(10, this.parentNode, 1)">&#10095;</a>
+                        </div>
+                    </li>
+                    <li>
+                        ShipIn5  
+                        <br>
+                        <div class="description">   
+                            Student project showcase, grand prix in design. 
+                            <br>
+                            Two players cooperate to safely deliver a package. Made with Unity3D.
+                            <br>
+                            My responsibilities:
+                            <ul>
+                                <li>Implementation of alien behavior.</li>
+                                <li>Implementation of enemy ships behavior.</li>
+                                <li>External tool for managing events in game.</li>
+                            </ul>
+                        </div>
+                        <div class="media">
+                            <div class="mySlides">
+                                <img src="media/Si5_0.png" height="500">
+                            </div>
+                            <div class="mySlides">
+                                <iframe width="889" height="500" src="https://www.youtube.com/embed/3btCJCi3_Lg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="mySlides">
+                                <img src="media/Si5_1.png" height="500">
+                            </div>
+                            <div class="mySlides">
+                                <img src="media/Si5_2.png" height="500">
+                            </div>
+                            <div class="mySlides">
+                                <img src="media/Si5_3.png" height="500">
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(11, this.parentNode, -1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(11, this.parentNode, 1)">&#10095;</a>
+                        </div>
+                    </li>
+                    <li>
+                        Techland Game Jam 2014 
+                        <br>
+                        <div class="description"> 
+                        48h GameJam. Players resolve puzzles with help of Spirits that mimic their behavior. Made with Unity3D.
+                        <br>
+                        My responsibilities:
+                        <ul>
+                            <li>Implementation of Spirits behavior.</li>
+                            <li>Implementation of Spirits-object interaction.</li>
+                            <li>Level design.</li>
+                        </ul>
+                    </div>
+                    <div class="media">
+                        <div class="mySlides">
+                            <iframe width="889" height="500" src="https://www.youtube.com/embed/_1pr7Qm0kjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>      
+
+                        <a class="prev" onclick="plusSlides(12, this.parentNode, -1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(12, this.parentNode, 1)">&#10095;</a>
+                    </div>
+                </li>
+                    <li>
+                        Rocket Thruster 
+                        <br>
+                        <div class="description"> 
+                        Student project. Player controls rocket to complete simple tasks. Made with Unity3D.
+                        <br>
+                        My responsibilities:
+                        <ul>
+                            <li>Implementation of rocket control.</li>
+                            <li>Implementation of hook behavior (grabbing objects and opening doors).</li>
+                            <li>Implementation of enemy cannons behavior.</li>
+                            <li>Implementation of cutscene.</li>
+                            <li>Level design.</li>
+                        </ul>
+                    </div>
+                    <div class="media">
+                        <div class="mySlides">
+                            <img src="media/RT_0.webp" height="500">
+                        </div>
+                        <div class="mySlides">
+                            <img src="media/RT_1.webp" height="500">
+                        </div>
+                        <div class="mySlides">
+                            <img src="media/RT_2.webp" height="500">
+                        </div>
+                        <div class="mySlides">
+                            <img src="media/RT_3.webp" height="500">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(13, this.parentNode, -1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(13, this.parentNode, 1)">&#10095;</a>
+                    </div></li>
                 </ul>
             </div>
         </div>
@@ -107,6 +431,38 @@
             Specialty II: Technology and Graphics in Games
             </div>
         </div>
-        <script src="" async defer></script>
+        <script>
+            var slideIndex = [];
+            function showSlides( mediaID, media, slideID ) {
+                var i;
+                var slides = media.getElementsByClassName("mySlides");
+                var tmpSlideIndex = slideID;
+                if (slideID > slides.length) {tmpSlideIndex = 1}
+                if (slideID < 1) {tmpSlideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex[mediaID] = tmpSlideIndex;
+                slides[tmpSlideIndex-1].style.display = "block";
+            }
+
+            function registerMedia() {
+                var slides = document.getElementsByClassName("media");
+                var mediaCount = slides.length;
+                slideIndex.length = mediaCount;
+                for ( var i = 0; i < mediaCount; ++i ) {
+                    slideIndex[i] = 1;
+                    showSlides( i, slides[i], 1 );
+                }
+            }
+
+            registerMedia();
+
+            // Next/previous controls
+            function plusSlides(mediaID, media, n) {
+                slideIndex[mediaID] += n;
+                showSlides(mediaID, media, slideIndex[mediaID]);
+            }
+        </script>
     </body>
 </html>
