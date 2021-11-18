@@ -11,6 +11,12 @@ div.resume_section {
     font-size: 20px;
 }
 
+div.resume_section:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
 div.resume_section h3 {
     margin-bottom: 10px;
 }
@@ -19,23 +25,20 @@ div.resume_section_content {
     margin-left: 50px;
 }
 
-a:link {
-    color: #2e55b6;
-}
-
 div.description {
     float: left;
-    width: 50%;
+    width: 25%;
+    height: 500px;
 }
 
 div.media {
     float: left;
-    width: 50%;    
+    width: 75%;    
     position: relative;
+    height: 500px;
 }
 
 img {
-    vertical-align: middle;
     object-fit: cover;
 }
 
@@ -43,7 +46,7 @@ img {
 .next {
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 50%;
     width: auto;
     padding: 16px;
     margin-top: -50px;
@@ -71,4 +74,9 @@ img {
 /* Hide the images by default */
 .mySlides {
     display: none;
+}
+
+a:link,
+a:visited {
+    color: #2e55b6;
 }
