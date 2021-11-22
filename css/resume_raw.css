@@ -65,9 +65,10 @@ img {
     cursor: pointer;
     position: absolute;
     top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     width: auto;
     padding: 2.5%;
-    margin-top: -50px;
     color: white;
     font-weight: bold;
     font-size: 20px;
@@ -91,8 +92,11 @@ img {
 /* Hide the images by default */
 .slide {
     display: none;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    left: 7.5%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     width: 85%;    
 }
 

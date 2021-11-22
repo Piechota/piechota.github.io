@@ -5,6 +5,7 @@ from io import BytesIO
 from PIL import Image
 from videoprops import get_video_properties
 import sys
+import copy
 
 def main():
     index_html = html.parse( "index_raw.html" )
@@ -13,7 +14,8 @@ def main():
     resume_css.write(resume_raw_css.read())
     resume_raw_css.close()
 
-
+    prev_element = html.fromstring('<a class="prev" onclick="plusSlides(this.parentNode, -1)">&#10094;</a>' )
+    next_element = html.fromstring('<a class="next" onclick="plusSlides(this.parentNode, 1)">&#10095;</a>' )
 
     resume_sections = index_html.xpath('//div[@class="resume_section_element"]')
     for resume_section in resume_sections:        
@@ -27,6 +29,10 @@ def main():
             media_width = 25 * 0.85
             media_width_mobile = 100 * 0.85
         
+            if len(media_conteiner[0]) > 1:
+                media_conteiner[0].append(copy.deepcopy(prev_element))
+                media_conteiner[0].append(copy.deepcopy(next_element))
+
             media = media_conteiner[0].xpath('img | video/source')
             media_height = 0
             media_height_mobile = 0
@@ -50,17 +56,16 @@ def main():
 
             if media_height > 0:
                 media_conteiner[0].set('id', id_name)
-                resume_css.write( "\n#" + id_name + " {" )
-                resume_css.write( "\n\theight:" + str(media_height) + "vw;" )
-                resume_css.write( "\n}" )
+                resume_css.write(  "\n#" + id_name + """ {
+    height:""" + str(media_height) + """vw;
+}
+@media only screen and (max-width: 768px) {
+    #""" + id_name + """ {
+        height: """ + str(media_height_mobile) + """vw;
+    }
+}""" )
 
-                resume_css.write( "\n@media only screen and (max-width: 768px) {" )
-                resume_css.write( "\n\t#" + id_name + " {" )
-                resume_css.write( "\n\t\theight:" + str(media_height_mobile) + "vw;" )
-                resume_css.write( "\n\t}" )
-                resume_css.write( "\n}" )
-
-    index_html.write('index.html', method='html', pretty_print=True)
+    index_html.write('index.html', method='html', pretty_print=False)
     resume_css.close()
 
     return 0

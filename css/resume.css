@@ -65,9 +65,10 @@ img {
     cursor: pointer;
     position: absolute;
     top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     width: auto;
     padding: 2.5%;
-    margin-top: -50px;
     color: white;
     font-weight: bold;
     font-size: 20px;
@@ -91,8 +92,11 @@ img {
 /* Hide the images by default */
 .slide {
     display: none;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    left: 7.5%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     width: 85%;    
 }
 
@@ -129,130 +133,146 @@ a:visited:hover {
     }
 }
 #Call_of_Duty_Vanguard {
-	height:11.953125vw;
+    height:11.953125vw;
 }
 @media only screen and (max-width: 768px) {
-	#Call_of_Duty_Vanguard {
-		height:47.8125vw;
-	}
+    #Call_of_Duty_Vanguard {
+        height: 47.8125vw;
+    }
 }
 #Call_of_Duty_Modern_WarfareWarzone {
-	height:11.981382978723405vw;
+    height:11.981382978723405vw;
 }
 @media only screen and (max-width: 768px) {
-	#Call_of_Duty_Modern_WarfareWarzone {
-		height:47.92553191489362vw;
-	}
+    #Call_of_Duty_Modern_WarfareWarzone {
+        height: 47.92553191489362vw;
+    }
 }
 #Shadow_Warrior_2 {
-	height:21.730654761904763vw;
+    height:21.730654761904763vw;
 }
 @media only screen and (max-width: 768px) {
-	#Shadow_Warrior_2 {
-		height:86.92261904761905vw;
-	}
+    #Shadow_Warrior_2 {
+        height: 86.92261904761905vw;
+    }
 }
 #Hard_Reset_Redux {
-	height:12.625087473757873vw;
+    height:12.625087473757873vw;
 }
 @media only screen and (max-width: 768px) {
-	#Hard_Reset_Redux {
-		height:50.50034989503149vw;
-	}
+    #Hard_Reset_Redux {
+        height: 50.50034989503149vw;
+    }
 }
 #Pangrollin {
-	height:34.030249110320284vw;
+    height:34.030249110320284vw;
 }
 @media only screen and (max-width: 768px) {
-	#Pangrollin {
-		height:136.12099644128114vw;
-	}
+    #Pangrollin {
+        height: 136.12099644128114vw;
+    }
 }
 #Distorted {
-	height:11.950768775872264vw;
+    height:11.950768775872264vw;
 }
 @media only screen and (max-width: 768px) {
-	#Distorted {
-		height:47.80307510348906vw;
-	}
+    #Distorted {
+        height: 47.80307510348906vw;
+    }
 }
 #Bluetooth_Car {
-	height:11.953125vw;
+    height:11.953125vw;
 }
 @media only screen and (max-width: 768px) {
-	#Bluetooth_Car {
-		height:47.8125vw;
-	}
+    #Bluetooth_Car {
+        height: 47.8125vw;
+    }
+}
+#LazyKrzysztof {
+    height:28.305984555984555vw;
+}
+@media only screen and (max-width: 768px) {
+    #LazyKrzysztof {
+        height: 113.22393822393822vw;
+    }
+}
+#Lightleech {
+    height:11.953125vw;
+}
+@media only screen and (max-width: 768px) {
+    #Lightleech {
+        height: 47.8125vw;
+    }
 }
 #RayTracing {
-	height:20.86985688729875vw;
+    height:20.86985688729875vw;
 }
 @media only screen and (max-width: 768px) {
-	#RayTracing {
-		height:83.479427549195vw;
-	}
+    #RayTracing {
+        height: 83.479427549195vw;
+    }
 }
 #SandBox_engine {
-	height:20.75772200772201vw;
+    height:20.75772200772201vw;
 }
 @media only screen and (max-width: 768px) {
-	#SandBox_engine {
-		height:83.03088803088804vw;
-	}
+    #SandBox_engine {
+        height: 83.03088803088804vw;
+    }
 }
 #Software_rasterizer {
-	height:20.438368055555557vw;
+    height:20.438368055555557vw;
 }
 @media only screen and (max-width: 768px) {
-	#Software_rasterizer {
-		height:81.75347222222223vw;
-	}
+    #Software_rasterizer {
+        height: 81.75347222222223vw;
+    }
 }
 #Ludum_Dare_40 {
-	height:19.474940334128878vw;
+    height:19.474940334128878vw;
 }
 @media only screen and (max-width: 768px) {
-	#Ludum_Dare_40 {
-		height:77.89976133651551vw;
-	}
+    #Ludum_Dare_40 {
+        height: 77.89976133651551vw;
+    }
 }
 #Ludum_Dare_38 {
-	height:20.677884615384617vw;
+    height:20.677884615384617vw;
 }
 @media only screen and (max-width: 768px) {
-	#Ludum_Dare_38 {
-		height:82.71153846153847vw;
-	}
+    #Ludum_Dare_38 {
+        height: 82.71153846153847vw;
+    }
 }
 #TheHunt {
-	height:11.953125vw;
+    height:11.953125vw;
 }
 @media only screen and (max-width: 768px) {
-	#TheHunt {
-		height:47.8125vw;
-	}
+    #TheHunt {
+        height: 47.8125vw;
+    }
 }
 #Ludum_Dare_32 {
-	height:11.953125vw;
+    height:11.953125vw;
 }
 @media only screen and (max-width: 768px) {
-	#Ludum_Dare_32 {
-		height:47.8125vw;
-	}
+    #Ludum_Dare_32 {
+        height: 47.8125vw;
+    }
 }
 #ShipIn5 {
-	height:11.964809384164223vw;
+    height:11.964809384164223vw;
 }
 @media only screen and (max-width: 768px) {
-	#ShipIn5 {
-		height:47.85923753665689vw;
-	}
+    #ShipIn5 {
+        height: 47.85923753665689vw;
+    }
 }
 #Rocket_Thruster {
-	height:13.291666666666666vw;
+    height:13.291666666666666vw;
 }
 @media only screen and (max-width: 768px) {
-	#Rocket_Thruster {
-		height:53.166666666666664vw;
-	}
+    #Rocket_Thruster {
+        height: 53.166666666666664vw;
+    }
 }
