@@ -22,6 +22,7 @@ div.resume_section h3 {
 
 div.resume_section_element {
     margin-left: 50px;
+    width: 50%;
 }
 
 
@@ -36,19 +37,22 @@ div.hello_section {
     margin-left: 10%;
 }
 
+div.resume_section_element:nth-child(odd) {
+    background-color:rgb(39, 39, 39)
+}
+
 div.hello_section {
     font-size: 25px;
 }
 
 div.description {
     float: left;
-    width: 25%;
+    width: 50%;
 }
 
 div.media {
     float: left;
-    width: 25%;    
-    margin-right: 50%;
+    width: 50%;    
     position: relative;
 }
 
@@ -83,10 +87,9 @@ img {
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-  
 
 /* Hide the images by default */
-.mySlides {
+.slide {
     display: none;
     margin-left: auto;
     margin-right: auto;
@@ -96,4 +99,160 @@ img {
 a:link,
 a:visited {
     color: #2e55b6;
+}
+
+a:link:hover,
+a:visited:hover {
+    color: #4464b6;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    div.description {
+        width: 100%;
+        margin-bottom: 2.5vw;
+        float: none;
+    }
+    div.media {
+        width: 100%;    
+        margin-right: 0%;
+        float: none;
+    }
+    div.resume_section_element {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    div.resume_section_content,
+    div.hello_section {
+        margin-left: 0%;
+    }
+}
+#Call_of_Duty_Vanguard {
+	height:11.953125vw;
+}
+@media only screen and (max-width: 768px) {
+	#Call_of_Duty_Vanguard {
+		height:47.8125vw;
+	}
+}
+#Call_of_Duty_Modern_WarfareWarzone {
+	height:11.981382978723405vw;
+}
+@media only screen and (max-width: 768px) {
+	#Call_of_Duty_Modern_WarfareWarzone {
+		height:47.92553191489362vw;
+	}
+}
+#Shadow_Warrior_2 {
+	height:21.730654761904763vw;
+}
+@media only screen and (max-width: 768px) {
+	#Shadow_Warrior_2 {
+		height:86.92261904761905vw;
+	}
+}
+#Hard_Reset_Redux {
+	height:12.625087473757873vw;
+}
+@media only screen and (max-width: 768px) {
+	#Hard_Reset_Redux {
+		height:50.50034989503149vw;
+	}
+}
+#Pangrollin {
+	height:34.030249110320284vw;
+}
+@media only screen and (max-width: 768px) {
+	#Pangrollin {
+		height:136.12099644128114vw;
+	}
+}
+#Distorted {
+	height:11.950768775872264vw;
+}
+@media only screen and (max-width: 768px) {
+	#Distorted {
+		height:47.80307510348906vw;
+	}
+}
+#Bluetooth_Car {
+	height:11.953125vw;
+}
+@media only screen and (max-width: 768px) {
+	#Bluetooth_Car {
+		height:47.8125vw;
+	}
+}
+#RayTracing {
+	height:20.86985688729875vw;
+}
+@media only screen and (max-width: 768px) {
+	#RayTracing {
+		height:83.479427549195vw;
+	}
+}
+#SandBox_engine {
+	height:20.75772200772201vw;
+}
+@media only screen and (max-width: 768px) {
+	#SandBox_engine {
+		height:83.03088803088804vw;
+	}
+}
+#Software_rasterizer {
+	height:20.438368055555557vw;
+}
+@media only screen and (max-width: 768px) {
+	#Software_rasterizer {
+		height:81.75347222222223vw;
+	}
+}
+#Ludum_Dare_40 {
+	height:19.474940334128878vw;
+}
+@media only screen and (max-width: 768px) {
+	#Ludum_Dare_40 {
+		height:77.89976133651551vw;
+	}
+}
+#Ludum_Dare_38 {
+	height:20.677884615384617vw;
+}
+@media only screen and (max-width: 768px) {
+	#Ludum_Dare_38 {
+		height:82.71153846153847vw;
+	}
+}
+#TheHunt {
+	height:11.953125vw;
+}
+@media only screen and (max-width: 768px) {
+	#TheHunt {
+		height:47.8125vw;
+	}
+}
+#Ludum_Dare_32 {
+	height:11.953125vw;
+}
+@media only screen and (max-width: 768px) {
+	#Ludum_Dare_32 {
+		height:47.8125vw;
+	}
+}
+#ShipIn5 {
+	height:11.964809384164223vw;
+}
+@media only screen and (max-width: 768px) {
+	#ShipIn5 {
+		height:47.85923753665689vw;
+	}
+}
+#Rocket_Thruster {
+	height:13.291666666666666vw;
+}
+@media only screen and (max-width: 768px) {
+	#Rocket_Thruster {
+		height:53.166666666666664vw;
+	}
 }
