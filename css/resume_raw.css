@@ -59,7 +59,7 @@ div.media {
     position: relative;
 }
 
-img {
+img.slide {
     object-fit: contain;
 }
 
@@ -103,6 +103,12 @@ img {
     width: 85%;    
 }
 
+img.slide:hover,
+video.slide:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
 a:link,
 a:visited {
     color: #2e55b6;
@@ -111,6 +117,54 @@ a:visited {
 a:link:hover,
 a:visited:hover {
     color: #4464b6;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80vw;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+.notransition {
+    animation-duration: 0s;
 }
 
 @media only screen and (max-width: 768px) {
@@ -133,5 +187,10 @@ a:visited:hover {
     div.resume_section_content,
     div.hello_section {
         margin-left: 0%;
+    }
+
+    .modal-content {
+        width: 100%;
+        max-width: 90vw;
     }
 }

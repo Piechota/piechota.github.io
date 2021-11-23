@@ -33,7 +33,7 @@ def main():
                 media_conteiner[0].append(copy.deepcopy(prev_element))
                 media_conteiner[0].append(copy.deepcopy(next_element))
 
-            media = media_conteiner[0].xpath('img | video/source')
+            media = media_conteiner[0].xpath('img[@class="slide"] | video[@class="slide"]/source')
             media_height = 0
             media_height_mobile = 0
             for medium in media:
