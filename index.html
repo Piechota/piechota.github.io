@@ -470,10 +470,12 @@
             }
 
             var modalBackground = document.getElementsByClassName("modal")[0];
-            var modalImg = document.getElementsByClassName("modal-content")[0];
-            var modalIframe = document.getElementsByClassName("modal-content")[1];
-            var modalVid = document.getElementsByClassName("modal-content")[2];
+            var modalImg = modalBackground.getElementsByClassName("modal-content")[0];
+            var modalIframe = modalBackground.getElementsByClassName("modal-content")[1];
+            var modalVid = modalBackground.getElementsByClassName("modal-content")[2];
             var modalVidSrc = modalVid.getElementsByTagName("source")[0];
+            var modalPrev = modalBackground.getElementsByClassName("prev")[0];
+            var modalNext = modalBackground.getElementsByClassName("next")[0];
 
             var currentModalMedia = null;
 
@@ -520,6 +522,15 @@
                 modalShow(slidesMap.get(media)[slideIndex.get(media)]);
                 currentModalMedia = media;
 
+                if ( slidesMap.get(currentModalMedia).length > 1 ) {
+                    modalPrev.style.display = "block";
+                    modalNext.style.display = "block";
+                }
+                else {
+                    modalPrev.style.display = "none";
+                    modalNext.style.display = "none";
+                }   
+
                 disableAnimationEvent = setInterval(disableAnimation, 600);
             }
 
@@ -541,6 +552,18 @@
             document.body.addEventListener('keydown', function(e) {
                 if (e.key == "Escape") {
                     closeModal();
+                    return;
+                }
+
+                if (modalBackground.style.display == "block") {
+                    if ( e.key == "ArrowLeft" ) {
+                        plusModalSlides(-1);
+                        return;
+                    }
+                    if ( e.key == "ArrowRight" ) {
+                        plusModalSlides(1);
+                        return;
+                    }
                 }
             });
         </script>
