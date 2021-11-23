@@ -25,7 +25,7 @@ def main():
             id_name = id_name.replace(' ', '_')
             id_name = id_name.replace(':', '')
             id_name = id_name.replace('/', '')
-            
+            id_name = id_name.replace("'", '')
             media_width = 25 * 0.85
             media_width_mobile = 100 * 0.85
         

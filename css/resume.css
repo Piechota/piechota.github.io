@@ -140,20 +140,28 @@ a:visited:hover {
         height: 47.8125vw;
     }
 }
-#Call_of_Duty_Modern_WarfareWarzone {
+#Call_of_Duty_Warzone {
+    height:11.953125vw;
+}
+@media only screen and (max-width: 768px) {
+    #Call_of_Duty_Warzone {
+        height: 47.8125vw;
+    }
+}
+#Call_of_Duty_Modern_Warfare {
     height:11.981382978723405vw;
 }
 @media only screen and (max-width: 768px) {
-    #Call_of_Duty_Modern_WarfareWarzone {
+    #Call_of_Duty_Modern_Warfare {
         height: 47.92553191489362vw;
     }
 }
 #Shadow_Warrior_2 {
-    height:21.730654761904763vw;
+    height:21.25vw;
 }
 @media only screen and (max-width: 768px) {
     #Shadow_Warrior_2 {
-        height: 86.92261904761905vw;
+        height: 85.0vw;
     }
 }
 #Hard_Reset_Redux {
@@ -189,18 +197,10 @@ a:visited:hover {
     }
 }
 #LazyKrzysztof {
-    height:28.305984555984555vw;
-}
-@media only screen and (max-width: 768px) {
-    #LazyKrzysztof {
-        height: 113.22393822393822vw;
-    }
-}
-#Lightleech {
     height:11.953125vw;
 }
 @media only screen and (max-width: 768px) {
-    #Lightleech {
+    #LazyKrzysztof {
         height: 47.8125vw;
     }
 }
@@ -228,19 +228,11 @@ a:visited:hover {
         height: 81.75347222222223vw;
     }
 }
-#Ludum_Dare_40 {
-    height:19.474940334128878vw;
-}
-@media only screen and (max-width: 768px) {
-    #Ludum_Dare_40 {
-        height: 77.89976133651551vw;
-    }
-}
-#Ludum_Dare_38 {
+#Your_small_world {
     height:20.677884615384617vw;
 }
 @media only screen and (max-width: 768px) {
-    #Ludum_Dare_38 {
+    #Your_small_world {
         height: 82.71153846153847vw;
     }
 }
@@ -252,14 +244,6 @@ a:visited:hover {
         height: 47.8125vw;
     }
 }
-#Ludum_Dare_32 {
-    height:11.953125vw;
-}
-@media only screen and (max-width: 768px) {
-    #Ludum_Dare_32 {
-        height: 47.8125vw;
-    }
-}
 #ShipIn5 {
     height:11.964809384164223vw;
 }
@@ -268,11 +252,35 @@ a:visited:hover {
         height: 47.85923753665689vw;
     }
 }
+#Lightleech {
+    height:11.953125vw;
+}
+@media only screen and (max-width: 768px) {
+    #Lightleech {
+        height: 47.8125vw;
+    }
+}
+#Lil_Justins_Fame_Escape {
+    height:19.474940334128878vw;
+}
+@media only screen and (max-width: 768px) {
+    #Lil_Justins_Fame_Escape {
+        height: 77.89976133651551vw;
+    }
+}
 #Rocket_Thruster {
     height:13.291666666666666vw;
 }
 @media only screen and (max-width: 768px) {
     #Rocket_Thruster {
         height: 53.166666666666664vw;
+    }
+}
+#Commit_Racer {
+    height:11.953125vw;
+}
+@media only screen and (max-width: 768px) {
+    #Commit_Racer {
+        height: 47.8125vw;
     }
 }
