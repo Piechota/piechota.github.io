@@ -21,8 +21,11 @@
         </div>
 
         <div class="hello_section">
-            Hello, my name is Konrad. 
-            <br>
+            Hello, my name is Konrad :)<br><br>
+            I have been programming professionally for <span id="exp"></span> years and more as a hobby.<br>
+            While in game industry I had opportunity to work on low-level cpu and gpu programming with focus on high performance.<br>
+            As a tool and graphics programmer I worked closely with people from other disciplines, graphics and sound artists, localization team, UI programmers etc.<br>
+            In my free time I play with electronic, reverse engineering challenges, 3D printing and game jams<br>
             <a href="mailto: konrad.piechota@outlook.com">konrad.piechota@outlook.com</a> / <a href="https://twitter.com/piechota_konrad">twitter</a> / <a href="doc/Konrad_Piechota_Resume.pdf">resume</a>
         </div>
 
@@ -47,8 +50,7 @@
                     <div class="description">
                         Entry into Call of Duty franchise, set in WW II.<br>
                         Made by Sledgehammer Games.<br>
-                        My biggest responsibility was raymarched fog.<br>
-                        New feature in engine, based on papers from H:ZD and RDR2.<br>
+                        I was the main architect behind raymarched clouds and I was coordinating a team of 4 people.<br>
                         Additionally I worked on SSS improvements.
                     </div>
                     <div class="media">
@@ -63,7 +65,7 @@
                     <h3>Call of Duty: Warzone</h3>
                     <div class="description">
                         Battle Royale mode set in Call of Duty universe.<br>
-                        I was responsible for technical part of gas surrounding shrinking play area.
+                        I implemented gas surrounding the shrinking play area, its visuals and correct integration with other fogs in engine.<br>
                     </div>
                     <div class="media">
                         <img class="slide" onclick="openModal(this.parentNode)" src="media/CoDW_logo.jpg">
@@ -76,8 +78,8 @@
                     <h3>Call of Duty: Modern Warfare</h3>
                     <div class="description">
                         Reboot of classic series with the same title.<br>
-                        I have worked mostly on improvements and optimizations of volumetric lighting.<br>
-                        Additionally I added SDF compression to alpha tested textures and helped with improvements to NVG.
+                        My biggest contribution was improvement and optimization of volumetric lighting. That allowed us to enable it on all maps and still hit 60Hz.<br>
+                        Additionally I added SDF compression to alpha tested textures, dithered transparency to clipping objects and helped with improvements to NVG.
                     </div>
                     <div class="media">
                         <img class="slide" onclick="openModal(this.parentNode)" src="media/COD-MW-LOGO-PLAIN.png">
@@ -106,7 +108,7 @@
                     <h3>Hard Reset: Redux</h3>
                     <div class="description">    
                         Remaster of Hard Reset from 2011.<br>
-                        I helped with final polish, like merging AO from original version with AO from new engine.
+                        I helped with final polish, merging AO from original version with AO in new engine.
                     </div>
                     <div class="media">
                         <img class="slide" onclick="openModal(this.parentNode)" src="media/hrr_logo.jpg">
@@ -117,7 +119,7 @@
                 <div class="resume_section_element">
                     <h3>Pangrollin</h3>
                     <div class="description">    
-                        Game made by Vescom Sutdios in Unity.<br>
+                        Game made by Vescom Studios in Unity.<br>
                         Variation on pinball with zombies.<br>
                         I was working on blood draw optimization and prototype of some core mechanics.
                     </div>
@@ -149,9 +151,10 @@
                 <div class="resume_section_element">
                     <h3>Bluetooth Car</h3>
                     <div class="description">   
-                        Car controlled with phone via bluetooth.<br>                        
+                        Car controlled with app on phone via bluetooth.<br>                        
                         I have used atmega8 and HC-05 for bluetooth.<br>
-                        Case 3D printed on Prusa MK3 with PLA.
+                        Case 3D printed on Prusa MK3 with PLA.<br>
+                        App in Java for android.
                     </div>
                     <div class="media">
                         <video  class="slide" onclick="openModal(this.parentNode)" autoplay muted loop>
@@ -167,9 +170,10 @@
                     <h3>LazyKrzysztof</h3>
                     <div class="description">   
                         Device supposed to replace whiteboard for lighting artists.<br>
-                        Using e-paper and ESP8266.<br>                        
-                        User needs to create hotspot on theirs phone.<br>
-                        Whole communication happens via website hosted on ESP.<br>
+                        Using e-paper and ESP8266.<br>
+                        Custom e-paper's refreshing LUTs.<br>                        
+                        User needs to create a hotspot on their phone.<br>
+                        Whole communication happens via a website hosted on ESP.<br>
                     </div>
                     <div class="media">
                         <img class="slide" onclick="openModal(this.parentNode)" src="media/LK0.JPG">
@@ -184,7 +188,7 @@
                     <h3>RayTracing</h3>
                     <div class="description">    
                         Small raytracing in C++.<br>
-                        Supports: volumetrics, BVH, multithreading.<br><br>
+                        Supports: volumetrics, BVH and multithreading.<br><br>
                         <a href="https://github.com/Piechota/rayTracing">Repo</a>
                     </div>
                     <div class="media">
@@ -234,7 +238,7 @@
                     <h3>Your small world</h3>
                     <div class="description">   
                         Ludum Dare 38 - 48h<br>
-                        Player needs to protect generator by shooting enemies and building turrets.<br>
+                        Player needs to protect the generator by shooting enemies and building turrets.<br>
                         Game, 2D engine and all assets made during game jam by me. Using C++ and DX12.<br><br>
                         <a href="https://ldjam.com/events/ludum-dare/38/your-small-world">Project site</a><br>
                         <a href="https://github.com/Piechota/ludumdare38">Repo</a>                            
@@ -246,7 +250,7 @@
                 </div>
 
                 <div class="resume_section_element">
-                    <h3>TheHunt</h3>
+                    <h3>The Hunt</h3>
                     <div class="description">   
                         Student project showcase, grand prix in technology. FPS game. Made with XNA.<br>
                         My responsibilities:
@@ -300,7 +304,7 @@
                     <h3>Lightleech</h3>
                     <div class="description">    
                         FPS game made in Unity for 7DFPS 2020.<br>
-                        My main resposnibility was rendering, custom lights, dense grass and custom sprites.<br>
+                        My main responsibility was rendering, custom lights, dense grass and custom sprites.<br>
                         Additionally worked on level design and gun system.<br><br>
                         <a href="https://spierek.itch.io/lightleech">Project Site</a>
                     </div>
@@ -334,7 +338,7 @@
                 <div class="resume_section_element">
                     <h3>Rocket Thruster</h3>
                     <div class="description"> 
-                        Student project released on Google Play Store. Player controls rocket to complete simple tasks. Made with Unity3D.<br>
+                        Student project released on Google Play Store. Player controls the rocket to complete simple tasks. Made with Unity3D.<br>
                         My responsibilities:
                         <ul>
                             <li>Implementation of rocket control.</li>
@@ -395,6 +399,8 @@
                         C/C++,  C#, Python, JavaScript, PHP, Shader Languages (glsl, hlsl)
                     <h3>Technologies:</h3>
                         Unity3D, DirectX12, Qt
+                    <h3>Consoles:</h3>
+                        PS4, Xbox One
                     <h3>Hardware-oriented development:</h3>
                         Arduino, Kinect v2, VR (Oculus Rift, Samsung Gear VR, Google Cardboard)
                 </div>
@@ -566,6 +572,17 @@
                     }
                 }
             });
+
+            function experience() {
+                var today = new Date();
+                var start = new Date(2014, 5, 1);
+                var difference = today - start;
+                return Math.floor(difference/(3.154e+10));
+            }
+
+            var expElement = document.getElementById("exp");
+            expElement.innerHTML = experience();
+
         </script>
     </body>
 </html>

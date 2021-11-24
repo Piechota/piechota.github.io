@@ -298,11 +298,11 @@ a:visited:hover {
         height: 82.71153846153847vw;
     }
 }
-#TheHunt {
+#The_Hunt {
     height:11.953125vw;
 }
 @media only screen and (max-width: 768px) {
-    #TheHunt {
+    #The_Hunt {
         height: 47.8125vw;
     }
 }
