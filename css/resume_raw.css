@@ -47,6 +47,8 @@ div.resume_section_element:nth-child(odd) {
 div.hello_section {
     font-size: 25px;
     width: 50vw;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 div.description {
