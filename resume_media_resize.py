@@ -39,8 +39,9 @@ def main():
                         copyfile(src_filename, dst_filename)
                         continue
 
-                    clip = clip.resize(width=700) 
-                    clip.write_videofile( dst_filename )
+                    print( colored("some MP4s have problems, check: " + filename_full, 'yellow') )
+                    clip2 = clip.resize(width=700) 
+                    clip2.write_videofile( dst_filename )
                 else:
                     image = Image.open(src_filename)
                     width, heigth = image.size         
@@ -49,7 +50,7 @@ def main():
                         continue
                     
                     if file_extension == '.gif':
-                        print( colored("Gif resize isn't supported", 'red') )
+                        print( colored("Gif resize isn't supported: " + filename_full, 'red') )
                         continue
 
                     image = resizeimage.resize_width(image, 700)
