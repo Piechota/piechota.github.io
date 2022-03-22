@@ -19,6 +19,12 @@ def main():
 
     resume_sections = index_html.xpath('//div[@class="resume_section_element"]')
     for resume_section in resume_sections:        
+        tech_conteiner = resume_section.xpath('div/div[@class="tech"]')
+        tech_conteiner_len = len( tech_conteiner )
+        for tech in tech_conteiner:
+            tech.set('style', 'z-index: ' + str(tech_conteiner_len))
+            tech_conteiner_len -= 1
+
         media_conteiner = resume_section.xpath('div[@class="media"]')
         if len(media_conteiner) > 0:
             id_name = resume_section.xpath('h3')[0].text_content()
