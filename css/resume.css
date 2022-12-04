@@ -258,6 +258,22 @@ a:visited:hover {
         max-width: 90vw;
     }
 }
+#Call_of_Duty_Warzone_2_0 {
+    height:11.960714285714285vw;
+}
+@media only screen and (max-width: 768px) {
+    #Call_of_Duty_Warzone_2_0 {
+        height: 47.84285714285714vw;
+    }
+}
+#Call_of_Duty_Modern_Warfare_II {
+    height:11.960714285714285vw;
+}
+@media only screen and (max-width: 768px) {
+    #Call_of_Duty_Modern_Warfare_II {
+        height: 47.84285714285714vw;
+    }
+}
 #Call_of_Duty_Vanguard {
     height:11.960714285714285vw;
 }

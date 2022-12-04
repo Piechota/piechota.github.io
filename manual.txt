@@ -1,0 +1,13 @@
+index_raw.html and resum_raw.css -> those are modified by hand.
+resume_formatting.py -> formats index_raw.html and outputs index.html (the same for css)
+resume_media_resize.py -> iterates over dir media and resize them to small versions.
+
+workflow:
+-add media
+-run python3 resume_media_resize.py
+ there is param '-f' that let you specify formats
+-edit index_raw.html/resum_raw.css
+-run python3 resume_formatting.py
+
+Notes:
+there is some bug with mp4 downsampling. BT car video has long pause after finishing.

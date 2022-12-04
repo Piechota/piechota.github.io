@@ -8,7 +8,7 @@ from termcolor import colored
 
 def main():
     args = sys.argv[1:]
-    formats_array = None
+    formats_array = []
     if '-f' in args:
         formats_index = args.index('-f') + 1
         formats_str = args[formats_index].replace(" ", "")

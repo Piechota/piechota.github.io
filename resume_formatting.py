@@ -29,6 +29,7 @@ def main():
         if len(media_conteiner) > 0:
             id_name = resume_section.xpath('h3')[0].text_content()
             id_name = id_name.replace(' ', '_')
+            id_name = id_name.replace('.', '_')
             id_name = id_name.replace(':', '')
             id_name = id_name.replace('/', '')
             id_name = id_name.replace("'", '')
