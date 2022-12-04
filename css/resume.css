@@ -355,11 +355,11 @@ a:visited:hover {
     }
 }
 #SandBox_engine {
-    height:20.75772200772201vw;
+    height:20.764285714285716vw;
 }
 @media only screen and (max-width: 768px) {
     #SandBox_engine {
-        height: 83.03088803088804vw;
+        height: 83.05714285714286vw;
     }
 }
 #Software_rasterizer {

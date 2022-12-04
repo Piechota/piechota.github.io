@@ -5,7 +5,7 @@ resume_media_resize.py -> iterates over dir media and resize them to small versi
 workflow:
 -add media
 -run python3 resume_media_resize.py
- there is param '-f' that let you specify formats
+ there is param '-f' that let you specify formats. Formats can be passed with/without . but need to be separated with ,
 -edit index_raw.html/resum_raw.css
 -run python3 resume_formatting.py
 
